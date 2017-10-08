@@ -3,6 +3,8 @@ apollo express boilerplate:
 http://dev.apollodata.com/tools/apollo-server/setup.html#importingESModules
 eslint setup:
 https://www.npmjs.com/package/eslint
+sequalize express example:
+https://github.com/sequelize/express-example
 
 ##Links to tutorials
 building a gql server form scratch: https://www.youtube.com/watch?v=hqk30IVeYak&feature=youtu.be
