@@ -1,3 +1,10 @@
+##Links to resources used
+apollo express boilerplate:
+http://dev.apollodata.com/tools/apollo-server/setup.html#importingESModules
+eslint setup:
+https://www.npmjs.com/package/eslint
+
+##Links to tutorials
 building a gql server form scratch: https://www.youtube.com/watch?v=hqk30IVeYak&feature=youtu.be
 
 nesting in gql
