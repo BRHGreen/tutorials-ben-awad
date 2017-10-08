@@ -5,6 +5,8 @@ eslint setup:
 https://www.npmjs.com/package/eslint
 sequalize express example:
 https://github.com/sequelize/express-example
+sequelize docs:
+http://docs.sequelizejs.com/
 
 ##Links to tutorials
 building a gql server form scratch: https://www.youtube.com/watch?v=hqk30IVeYak&feature=youtu.be
