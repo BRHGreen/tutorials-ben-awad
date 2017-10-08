@@ -2,8 +2,9 @@ export default `
 
 type Suggestion {
   id: Int!
-  test: String!
-  creator: User!
+  text: String!
+  creator: Int!
+  creatorUsername: String
 }
 
 type Board {

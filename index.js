@@ -2,10 +2,10 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import { graphiqlExpress, graphqlExpress } from 'graphql-server-express';
 import { makeExecutableSchema } from 'graphql-tools';
-import models from './models'
 
 import typeDefs from './schema';
 import resolvers from './resolvers';
+import models from './models';
 
 const PORT = 3000;
 const app = express();
@@ -22,4 +22,4 @@ app.use('/graphiql', graphiqlExpress({
 app.use('/graphql', bodyParser.json(), graphqlExpress({ schema, context: { models } }));
 
 // creates/syncs the database
-models.sequelize.sync().then(() => app.listen(3000));
+models.sequelize.sync().then(() => app.listen(PORT));

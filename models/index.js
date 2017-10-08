@@ -1,7 +1,7 @@
 import Sequelize from 'sequelize';
 
 const sequelize = new Sequelize(
-  'test_graphql_db',
+  'test_graphql_db_2',
   'test_username_1',
   'test_password_1',
   {
@@ -11,7 +11,7 @@ const sequelize = new Sequelize(
 );
 
 const db = {
-User: sequelize.import('./user'),
+  User: sequelize.import('./user'),
   Board: sequelize.import('./board'),
   Suggestion: sequelize.import('./suggestion'),
 };
