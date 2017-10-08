@@ -1,11 +1,19 @@
 export default {
   Query: {
+
     allUsers: (parent, args, { models }) => models.User.findAll(),
-    getUser: (parent, { username }, { models }) =>
-      models.User.findOne({
+
+    userBoards: (parent, { owner }, { models }) =>
+      models.Board.findAll({
         where: {
-          username,
-        }
+          owner,
+        },
+      }),
+    userSuggestions: (parent, { creatorId }, { models }) =>
+      models.Suggestion.findAll({
+        where: {
+          creatorId,
+        },
       }),
   },
 
@@ -15,5 +23,7 @@ export default {
       models.User.update({ username: newUsername }, { where: { username } }),
     deleteUser: (parent, args, { models }) =>
       models.User.destroy({ where: args }),
+    createBoard: (parent, args, { models }) => models.Board.create(args),
+    createSuggestion: (parent, args, { models }) => models.Suggestion.create(args),
   },
 };
