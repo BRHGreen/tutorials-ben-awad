@@ -14,8 +14,14 @@ building a gql server form scratch: https://www.youtube.com/watch?v=hqk30IVeYak&
 nesting in gql
 https://www.youtube.com/watch?v=Ffl1oWjSUF4&feature=youtu.be
 
-setting up reactql: https://www.youtube.com/watch?v=XEGabB1OIcA
+authentication with gql: https://www.youtube.com/watch?v=eu2VJ9dtwiY
+
+Create React App Register Form Tutorial(with no starter code for the front end): https://www.youtube.com/watch?v=01Dc5mtm1wQ&feature=youtu.be
+
+Create React App Login Form: https://www.youtube.com/watch?v=M4kk3Ac0WSM&t=4s
+
+
 
 creating own gql server with reactql: https://www.youtube.com/watch?v=TU-jZTpCig4&feature=youtu.be
 
-authentication with gql: https://www.youtube.com/watch?v=eu2VJ9dtwiY
+setting up reactql: https://www.youtube.com/watch?v=XEGabB1OIcA
