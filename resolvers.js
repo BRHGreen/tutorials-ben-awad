@@ -35,12 +35,20 @@ export default {
   },
   Query: {
     allUsers: (parent, args, { models }) => models.User.findAll(),
-    getUser: (parent, { username }, { models }) =>
-      models.User.findOne({
-        where: {
-          username,
-        },
-      }),
+    me: (parent, args, { models, user }) => {
+      // you specify `req.header.authenticaton` in the header in index.js so
+      // that you can check here if they are authenticated or not
+      if (user) {
+        // logged in
+        return models.User.findOne({
+          where: {
+            id: user.id,
+          },
+        });
+      }
+      // if not logged in
+      return null;
+    },
     userBoards: (parent, { owner }, { models }) =>
       models.Board.findAll({
         where: {
