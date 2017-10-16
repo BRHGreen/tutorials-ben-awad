@@ -16,13 +16,19 @@ const schema = makeExecutableSchema({
   resolvers,
 });
 
+//
+const SECRET = 'saljs8387u89f0sl3';
+
 app.use(cors('*'));
 
 app.use('/graphiql', graphiqlExpress({
   endpointURL: '/graphql',
 }));
 
-app.use('/graphql', bodyParser.json(), graphqlExpress({ schema, context: { models } }));
+app.use('/graphql', bodyParser.json(), graphqlExpress({
+  schema,
+  context: { models, SECRET },
+}));
 
 // creates/syncs the database
 models.sequelize.sync().then(() => app.listen(PORT));
